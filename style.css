@@ -103,3 +103,77 @@ textarea {
     width: 120px;
     height: auto;
 }
+.schedule-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.schedule-form {
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.schedule-form input,
+.schedule-form select,
+.schedule-form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.day-checkboxes {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.schedule-header {
+    background: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.schedule-day {
+    background: white;
+    min-height: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.course-card {
+    color: #111;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.course-card button {
+    margin-top: 8px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background: #ffdddd;
+    border: 1px solid #cc7777;
+}
