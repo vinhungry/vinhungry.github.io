@@ -99,3 +99,7 @@ textarea {
 .menu-button:hover {
     background: #e8f0ff;
 }
+.menu-image {
+    width: 120px;
+    height: auto;
+}
