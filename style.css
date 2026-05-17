@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.day {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.day:hover {
+    background: #e8f0ff;
+}
+
+.has-note {
+    background: #fff3b0;
+}
+
+#noteBox {
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    padding: 10px;
+}
