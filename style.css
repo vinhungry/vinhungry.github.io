@@ -66,3 +66,36 @@ textarea {
     text-decoration: none;
     color: #333;
 }
+.menu-image {
+    width: 180px;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+.menu-page {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+.menu-button {
+    text-decoration: none;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 18px;
+}
+
+.menu-button:hover {
+    background: #e8f0ff;
+}
