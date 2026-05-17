@@ -8,20 +8,38 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 8px;
-    max-width: 700px;
+    max-width: 800px;
     margin: 30px auto;
+}
+
+.weekday {
+    font-weight: bold;
+    background: #ddd;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 .day {
     background: white;
-    padding: 20px;
+    min-height: 80px;
+    padding: 10px;
     border-radius: 8px;
     cursor: pointer;
     border: 1px solid #ddd;
+    text-align: left;
 }
 
 .day:hover {
     background: #e8f0ff;
+}
+
+.empty {
+    background: transparent;
+    border: none;
+}
+
+.today {
+    border: 3px solid #333;
 }
 
 .has-note {
@@ -40,28 +58,6 @@ textarea {
     width: 90%;
     height: 120px;
     padding: 10px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 300px;
-    margin: 30px auto;
-}
-
-.menu-button {
-    text-decoration: none;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    color: #333;
-    font-size: 18px;
-}
-
-.menu-button:hover {
-    background: #e8f0ff;
 }
 
 .back-button {
