@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="schedule-page">
+
+    <a href="index.html" class="back-button">← Back to Menu</a>
+
+    <h1>Schedule Maker</h1>
+    <p>Add your classes and build your weekly schedule.</p>
+
+    <div class="schedule-form">
+        <input type="text" id="courseName" placeholder="Course Name">
+
+        <input type="text" id="teacherName" placeholder="Teacher Name">
+
+        <select id="location">
+            <option value="">Select Location</option>
+            <option value="Sheehan">Sheehan</option>
+            <option value="Science & Tech">Science & Tech</option>
+            <option value="Library">Library</option>
+            <option value="Wellness Center">Wellness Center</option>
+        </select>
+
+        <input type="text" id="roomNumber" placeholder="Room Number">
+
+        <label>Start Time:</label>
+        <input type="time" id="startTime">
+
+        <label>End Time:</label>
+        <input type="time" id="endTime">
+
+        <label>Choose Color:</label>
+        <input type="color" id="courseColor" value="#8ecae6">
+
+        <div class="day-checkboxes">
+            <label><input type="checkbox" value="Monday"> Monday</label>
+            <label><input type="checkbox" value="Tuesday"> Tuesday</label>
+            <label><input type="checkbox" value="Wednesday"> Wednesday</label>
+            <label><input type="checkbox" value="Thursday"> Thursday</label>
+            <label><input type="checkbox" value="Friday"> Friday</label>
+        </div>
+
+        <button onclick="addCourse()">Add Course</button>
+        <button onclick="clearSchedule()" class="delete-button">Clear Schedule</button>
+    </div>
+
+    <div class="schedule-grid">
+        <div class="schedule-header">Monday</div>
+        <div class="schedule-header">Tuesday</div>
+        <div class="schedule-header">Wednesday</div>
+        <div class="schedule-header">Thursday</div>
+        <div class="schedule-header">Friday</div>
+
+        <div id="Monday" class="schedule-day"></div>
+        <div id="Tuesday" class="schedule-day"></div>
+        <div id="Wednesday" class="schedule-day"></div>
+        <div id="Thursday" class="schedule-day"></div>
+        <div id="Friday" class="schedule-day"></div>
+    </div>
+
+    <script src="schedule.js"></script>
+</body>
+</html>
