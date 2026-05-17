@@ -41,3 +41,32 @@ textarea {
     height: 120px;
     padding: 10px;
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+.menu-button {
+    text-decoration: none;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 18px;
+}
+
+.menu-button:hover {
+    background: #e8f0ff;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+}
